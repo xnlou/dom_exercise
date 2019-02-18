@@ -22,3 +22,19 @@ container.appendChild(content);
 
     // appends the paragraph to the container object
     container.appendChild(par);
+
+// Create a h3 header with blue text
+
+        // create a new paragraph for variable 'p'
+        const header3 = document.createElement('h3');
+        // Styles text in red
+        header3.style.color ='blue';
+    
+        // Create class for 1st paragraph
+        header3.classList.add('header');
+    
+        // add text to display
+        header3.textContent = "I'm a blue h3";
+    
+        // appends the paragraph to the container object
+        container.appendChild(header3);
