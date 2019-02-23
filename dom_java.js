@@ -25,12 +25,12 @@ container.appendChild(content);
 
 // Create a h3 header with blue text
 
-        // create a new paragraph for variable 'p'
+        // create a new paragraph for variable 'h3'
         const header3 = document.createElement('h3');
-        // Styles text in red
+        // Styles text in blue
         header3.style.color ='blue';
     
-        // Create class for 1st paragraph
+        // Create class for header
         header3.classList.add('header');
     
         // add text to display
@@ -38,3 +38,29 @@ container.appendChild(content);
     
         // appends the paragraph to the container object
         container.appendChild(header3);
+
+// Create a div with black border and pink background
+
+        // create a new div for variable 'div_1'
+        const div_1 = document.createElement('div');
+        // Styles for div
+        div_1.setAttribute('style', 'color: black ; background: pink');
+        div_1.style.border = 'black solid';
+
+        // Create h1 heading within div
+        const div_h = document.createElement('h')
+            // add text to display
+            div_h.textContent = "I'm in a div";
+        // Append h1 to div    
+        div_1.appendChild(div_h)
+
+        // Create p within div
+        const div_p = document.createElement('p')
+
+            // add text to display
+            div_p.textContent = "ME TOO!";
+        // append p to div_1 
+        div_1.appendChild(div_p)
+
+        // Append div_1 to container
+        container.appendChild(div_1);
